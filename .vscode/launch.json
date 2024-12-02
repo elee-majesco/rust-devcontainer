@@ -4,17 +4,19 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug",
-      "program": "${workspaceFolder}/${input:projectName}/target/debug/${input:projectName}",
+      "name": "Debug with Cargo",
+      "cargo": {
+        "args": [
+          "build",
+          "--manifest-path",
+          "${workspaceFolder}/my-project/Cargo.toml"
+        ],
+        "filter": {
+          "kind": "bin"
+        }
+      },
       "args": [],
-      "cwd": "${workspaceFolder}/${input:projectName}"
+      "cwd": "${workspaceFolder}/my-project",
     }
   ],
-  "inputs": [
-    {
-      "id": "projectName",
-      "type": "promptString",
-      "description": "Enter the project folder name",
-    }
-  ]
 }

@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Cargo Doc Open",
+      "type": "shell",
+      "command": "cargo doc --no-deps && python3 -m http.server 8000 -d target/doc",
+      "group": "none"
+    }
+  ]
+}

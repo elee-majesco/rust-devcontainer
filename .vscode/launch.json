@@ -6,17 +6,13 @@
       "request": "launch",
       "name": "Debug with Cargo",
       "cargo": {
-        "args": [
-          "build",
-          "--manifest-path",
-          "${workspaceFolder}/my-project/Cargo.toml"
-        ],
+        "args": ["build"],
         "filter": {
           "kind": "bin"
         }
       },
       "args": [],
-      "cwd": "${workspaceFolder}/my-project",
+      "cwd": "${workspaceFolder}"
     }
-  ],
+  ]
 }

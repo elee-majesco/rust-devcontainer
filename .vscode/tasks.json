@@ -6,6 +6,12 @@
       "type": "shell",
       "command": "cargo doc --no-deps && python3 -m http.server 8000 -d target/doc",
       "group": "none"
+    },
+    {
+      "label": "Cargo Bench Report",
+      "type": "shell",
+      "command": "python3 -m http.server 8000 -d target/criterion",
+      "group": "none"
     }
   ]
 }

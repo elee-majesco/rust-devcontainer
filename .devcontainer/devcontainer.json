@@ -57,6 +57,9 @@
     "--security-opt=seccomp=unconfined"
   ],
   "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
+  ],
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
   "shutdownAction": "stopContainer"
 }

@@ -42,12 +42,6 @@
     "CARGO_HOME": "/home/vscode/.cargo",
     "RUSTUP_HOME": "/home/vscode/.rustup"
   },
-  "portsAttributes": {
-    "8080": {
-      "label": "Web Server",
-      "onAutoForward": "openPreview"
-    }
-  },
   "remoteEnv": {
     "CARGO_HOME": "/home/vscode/.cargo",
     "RUSTUP_HOME": "/home/vscode/.rustup"
